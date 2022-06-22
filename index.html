@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="HandheldFriendly" content="true">
+        <title lang="en">Check_Your_Luck</title>
+        <meta name="description" content="This web-site is simulation of lottery">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header class="header"> 
+            <h1 class="header__text" lang="en">_Check_Your_Luck_</h1>
+        </header>
+        <main class="main">
+            <h1 class="main__header" lang="en">Hi.</h1>
+            <h2 class="main__text" lang="en">Now let's see, how many of 6 numbers in range of 1 to 48 you will guess.</h2>
+            <section class="main__content">
+                <form class="form">
+                    <input  type="number" class="form__input form__input--site hidden" aria-label='site--numbers' readonly>
+                    <input  type="number" class="form__input form__input--site hidden" aria-label='site--numbers' readonly>
+                    <input  type="number" class="form__input form__input--site hidden" aria-label='site--numbers' readonly>
+                    <input  type="number" class="form__input form__input--site hidden" aria-label='site--numbers' readonly>
+                    <input  type="number" class="form__input form__input--site hidden" aria-label='site--numbers' readonly>
+                    <input  type="number" class="form__input form__input--site hidden" aria-label='site--numbers' readonly>
+                </form>
+                <form class="form">
+                    <input  type="number" class="form__input form__input--user" min="1" max="48" aria-label='user--numbers' >
+                    <input  type="number" class="form__input form__input--user" min="1" max="48" aria-label='user--numbers' >
+                    <input  type="number" class="form__input form__input--user" min="1" max="48" aria-label='user--numbers' >
+                    <input  type="number" class="form__input form__input--user" min="1" max="48" aria-label='user--numbers' >
+                    <input  type="number" class="form__input form__input--user" min="1" max="48" aria-label='user--numbers' >
+                    <input  type="number" class="form__input form__input--user" min="1" max="48" aria-label='user--numbers' >
+                </form>
+                <form class="form">
+                    <input type="button" value="Check" class="form__button form__button--check">
+                    <input type="button" value="Clean" class="form__button form__button--clean">
+                    <input type="button" value="Random" class="form__button form__button--random">
+                </form>
+                <form class="form">
+                    <h2 class="form__text">Let's start</h2>
+                </form>
+                 </section>
+            </main>
+    <script src="js/script.js"></script>
+    </body>       
+</html>

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 50px;
+}
+.header__text{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    display: block;
+    height: 90vh;
+}
+.main__header{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+.main__text{
+    color: white;
+    font-size: 1.0em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.main__content{
+    display: flex;
+    flex-flow: column wrap;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-flow: row wrap;
+}
+.form__input{
+    height: 50px;
+    width: 35px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    text-align: center;
+}
+.form__input--site{
+    display: inline-block;
+    transition:transform 0.5s;
+}
+.hidden{
+   visibility: hidden;
+   transform: scale(0);
+}
+.form__button{
+    border: 0;
+    cursor: pointer;
+    height: 50px;
+    width: 35px; 
+    font-size: 5px; 
+    margin-bottom: 14px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    margin-right: 5px;
+    transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+.form__button:active{
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 1px;
+}
+.form__button:hover{
+    color: white;
+    background: black;
+    }
+.form__text{
+    height: 65px;
+    color: white;
+    font-size: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.good{
+    color:green;
+    background:url(img/good_icon.png);
+    background-size: 35px 50px;
+}
+.wrong{
+    color: red;
+    background: url(img/wrong_icon.png);
+    background-size: 35px 50px;
+}
+@media (min-width: 850.00px){
+    .header{
+        height: 80px;
+    }
+    .main__header{
+        font-size: 2.0em;
+    }
+    .main__text{
+        font-size: 1.5em;
+    }
+    .form__input{
+        height: 75px;
+        width: 45px;
+        font-size: 15px;
+    }  
+    .hidden{
+       height: 0px; 
+    }
+    .form__button{
+        height: 75px;
+        width: 45px; 
+        font-size: 10px; 
+        margin-bottom: 15px;
+    }
+    .good{
+        background-size: 45px 75px;
+    }
+    .wrong{
+        background-size: 45px 75px;
+    }
+    .form__text{
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 1024.00px){
+    .header{
+        height: 100px;
+    }
+    .main__header{
+        font-size: 2.5em;
+    }
+    .main__text{
+        font-size: 2.0em;
+    }
+    .form__input{
+        height: 90px;
+        width: 65px;
+        font-size: 25px;
+    }  
+    .hidden{
+        height: 0px; 
+     }
+    .form__button{
+        height: 90px;
+        width: 65px; 
+        font-size: 15px; 
+        margin-bottom: 10px;
+    }
+    .good{
+        background-size: 65px 90px;
+    }
+    .wrong{
+        background-size: 65px 90px;
+    }
+    .form__text{
+        font-size: 1.5em;
+    }
+}
