@@ -80,12 +80,8 @@ const compareValues=function(arrSite,arrUser){
     }
 }
 const cleanInputs=function(arrSite,arrUser){
-    for(el of arrSite){
-        el.value='';
-    }
-    for(el of arrUser){
-        el.value='';
-    }
+    arrSite.forEach(el=>el.value='');
+    arrUser.forEach(el=>el.value='');
 }
 const removeText=function(htmlElement){
     htmlElement.innerHTML='';
