@@ -62,19 +62,15 @@ const removeInputsClass=function(arr){
 }
 const compareValues=function(arrSite,arrUsers){
     let guessNumber=0;
-    for(firstArray of arrSite){
-        for(secoundArray of arrUsers){
-            if(firstArray.value == secoundArray.value){
-                secoundArray.classList.add('good');
-                secoundArray.classList.remove('wrong');
-                guessNumber++;
-            }else if(secoundArray.classList.contains('good')){
-                secoundArray.classList.remove('wrong');
-            }else{
-                secoundArray.classList.add('wrong');
-            }
+    const numbersFromArrSite = arrSite.map(el=> el.value);
+    arrUsers.forEach((el)=>{
+        if(numbersFromArrSite.indexOf(el.value) !==-1){
+            el.classList.add('good');
+            guessNumber++;
+        }else{
+            el.classList.add('wrong');
         }
-    }
+    })
     if(guessNumber===1){
         formText.innerHTML=`you guess ${guessNumber} number`;
     }else if(guessNumber>1){
