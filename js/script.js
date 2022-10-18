@@ -60,10 +60,10 @@ const removeInputsClass=function(arr){
         el.classList.remove('wrong');
     }
 }
-const compareValues=function(arrSite,arrUsers){
+const compareValues=function(arrSite,arrUser){
     let guessNumber=0;
     const numbersFromArrSite = arrSite.map(el=> el.value);
-    arrUsers.forEach((el)=>{
+    arrUser.forEach((el)=>{
         if(numbersFromArrSite.indexOf(el.value) !==-1){
             el.classList.add('good');
             guessNumber++;
@@ -79,11 +79,11 @@ const compareValues=function(arrSite,arrUsers){
         formText.innerHTML=`you guess nothing`;
     }
 }
-const cleanInputs=function(arrSite,arrUsers){
+const cleanInputs=function(arrSite,arrUser){
     for(el of arrSite){
         el.value='';
     }
-    for(el of arrUsers){
+    for(el of arrUser){
         el.value='';
     }
 }
