@@ -45,14 +45,10 @@ const giveRandomsValues=function(arr){
     }while(status);
 }
 const showInputs=function(arr){
-    for(el of arr){
-        el.classList.remove('hidden');
-    }
+    arr.forEach(el=> el.classList.remove('hidden'));
 }
 const hideInputs=function(arr){
-    for(el of arr){
-        el.classList.add('hidden');
-    }
+    arr.forEach(el=> el.classList.add('hidden'));
 }
 const removeInputsClass=function(arr){
     for(el of arr){
