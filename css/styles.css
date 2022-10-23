@@ -38,17 +38,17 @@ body{
     height: 80%;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 .form{
     display: flex;
     flex-flow: row wrap;
+    gap: 5px;
 }
 .form__input{
     height: 50px;
     width: 35px;
     font-size: 14px;
-    margin-left: 10px;
-    margin-bottom: 10px;
     border: 0;
     text-align: center;
 }
@@ -66,7 +66,6 @@ body{
     height: 50px;
     width: 35px; 
     font-size: 5px; 
-    margin-bottom: 14px;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     margin-right: 5px;
@@ -120,7 +119,6 @@ body{
         height: 75px;
         width: 45px; 
         font-size: 10px; 
-        margin-bottom: 15px;
     }
     .good{
         background-size: 45px 75px;
@@ -154,7 +152,6 @@ body{
         height: 90px;
         width: 65px; 
         font-size: 15px; 
-        margin-bottom: 10px;
     }
     .good{
         background-size: 65px 90px;
