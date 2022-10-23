@@ -38,12 +38,12 @@ body{
     height: 80%;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
 }
 .form{
     display: flex;
     flex-flow: row wrap;
-    gap: 5px;
+    gap: 10px;
 }
 .form__input{
     height: 50px;
