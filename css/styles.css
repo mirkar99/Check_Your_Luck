@@ -89,12 +89,12 @@ body{
 }
 .good{
     color:green;
-    background:url(img/good_icon.png);
+    background-image:url(img/good_icon.png);
     background-size: 35px 50px;
 }
 .wrong{
     color: red;
-    background: url(img/wrong_icon.png);
+    background-image: url(img/wrong_icon.png);
     background-size: 35px 50px;
 }
 @media (min-width: 850.00px){
